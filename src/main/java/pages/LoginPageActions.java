@@ -16,8 +16,9 @@ public class LoginPageActions {
         return this;
     }
 
-    public void fillInPassword(String password){
+    public LoginPageActions fillInPassword(String password){
         commonActions.fillInField(loginPageLocators.passwordField, password);
+        return this;
     }
     public void loginButtonClick(){
         commonActions.clickOnElement(loginPageLocators.loginButton);

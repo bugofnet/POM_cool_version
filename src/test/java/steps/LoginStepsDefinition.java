@@ -3,7 +3,6 @@ package steps;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import io.qameta.allure.Step;
 import pages.LoginPageActions;
 import utilities.TestUtilities;
 
@@ -24,14 +23,16 @@ public class LoginStepsDefinition {
 
     @And("I login as \"([^\"]*)\" with password \"([^\"]*)\"$")
     public void iLoginAsWithPassword(String login, String password) {
-        loginPageActions.fillInLogin(login);
-        loginPageActions.fillInPassword(password);
-        loginPageActions.loginButtonClick();
+        loginPageActions.fillInLogin(login)
+                        .fillInPassword(password)
+                        .loginButtonClick();
     }
+
     @Then("I have not been successfully logged$")
     public void iShouldSeeTheLinkToDownloadFile() {
         loginPageActions.isLoginIncorrect();
     }
+
     @And("I login with correct credentials")
     public void iLoginWithCorrectCredentials() {
         loginPageActions.correctLogin();

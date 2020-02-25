@@ -47,6 +47,7 @@ public class CommonActions {
 
     public void fillInField(WebElement webElement, String text) {
         waitVisibilityOfWebElement(webElement);
+        webElement.clear();
         webElement.sendKeys(text);
     }
 
@@ -62,6 +63,10 @@ public class CommonActions {
 
     public void isAlertText(String message) {
         assertEquals(message, Driver.driver.switchTo().alert().getText());
+    }
+
+    public String getElementText(WebElement element){
+        return element.getAttribute("value");
     }
 
 }
