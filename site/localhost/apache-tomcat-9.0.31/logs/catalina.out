@@ -642,3 +642,8 @@
 25-Feb-2020 13:27:31.064 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siarhei/Projects/bugofnet/coolframeWork/site/localhost/apache-tomcat-9.0.31/webapps/ROOT] has finished in [210] ms
 25-Feb-2020 13:27:31.066 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 25-Feb-2020 13:27:31.074 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [248] milliseconds
+25-Feb-2020 13:31:25.313 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-Feb-2020 13:31:25.314 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Feb-2020 13:31:25.322 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Feb-2020 13:31:25.345 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Feb-2020 13:31:25.348 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
